@@ -13,12 +13,6 @@ bool is_prime(unsigned long number){
     return true;
 }
 
-bool is_sexy(unsigned long p1, unsigned long p2){
-    if(p2 - p1 == 6)
-        return true;
-    return false;
-}
-
 int main(){
 
     unsigned long n;
