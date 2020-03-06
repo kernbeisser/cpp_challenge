@@ -1,7 +1,6 @@
 #include<iostream>
 
 unsigned int abundance(unsigned int upper){
-    // unsigned int divisors[upper] {0};
     unsigned int sum {0};
 
     for(int i = 1; i < upper; ++i){
@@ -9,11 +8,7 @@ unsigned int abundance(unsigned int upper){
             sum += i;
         }
     }
-  /* 
-    for(int i = 0; i < upper; ++i){
-        sum += divisors[i];
-    }
-  */
+
     if(sum > upper)
         return sum;
     else
@@ -22,7 +17,11 @@ unsigned int abundance(unsigned int upper){
 
 int main(){
 
-    for(int i = 1; i < 100; ++i){
+    std::cout << "Enter an upper limit: ";
+    unsigned int upper {};
+    std::cin >> upper;
+
+    for(int i = 1; i < upper; ++i){
         unsigned int a = abundance(i);
         if(a)
             std::cout << a << "\n";
