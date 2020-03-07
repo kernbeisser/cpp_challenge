@@ -24,7 +24,7 @@ int main(){
     for(int i = 1; i < upper; ++i){
         unsigned int a = abundance(i);
         if(a)
-            std::cout << a << "\n";
+            std::cout << i << " sum: " << a << "\n";
     }
     
     return 0;
