@@ -3,7 +3,7 @@
 unsigned int abundance(unsigned int upper){
     unsigned int sum {0};
 
-    for(int i = 1; i < upper; ++i){
+    for(unsigned int i = 1; i < upper; ++i){
         if(upper % i == 0){
             sum += i;
         }
@@ -21,7 +21,7 @@ int main(){
     unsigned int upper {};
     std::cin >> upper;
 
-    for(int i = 1; i < upper; ++i){
+    for(unsigned int i = 1; i < upper; ++i){
         unsigned int a = abundance(i);
         if(a)
             std::cout << i << " sum: " << a << "\n";
